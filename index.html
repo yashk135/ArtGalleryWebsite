@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Handmade Art Gallery</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f5f3ef;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #2f2f2f;
+      color: #fff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+    }
+
+    header a {
+      background: #c89b3c;
+      color: #000;
+      padding: 12px 25px;
+      text-decoration: none;
+      font-weight: 500;
+      border-radius: 5px;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    section h2 {
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      margin-bottom: 40px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .about, .custom {
+      text-align: center;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .custom a {
+      display: inline-block;
+      margin-top: 20px;
+      background: #2f2f2f;
+      color: #fff;
+      padding: 12px 25px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    footer {
+      background: #2f2f2f;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <header>
+    <h1>Handmade Art Gallery</h1>
+    <p>Custom sketches & handcrafted wood art made with passion</p>
+    <a href="#contact">Request Custom Art</a>
+  </header>
+
+  <!-- GALLERY -->
+  <section>
+    <h2>Art Gallery</h2>
+    <div class="gallery">
+      <img src="https://via.placeholder.com/400x300?text=Sketch+1" alt="Sketch">
+      <img src="https://via.placeholder.com/400x300?text=Sketch+2" alt="Sketch">
+      <img src="https://via.placeholder.com/400x300?text=Wood+Art+1" alt="Wood Art">
+      <img src="https://via.placeholder.com/400x300?text=Wood+Art+2" alt="Wood Art">
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section>
+    <h2>About the Artist</h2>
+    <div class="about">
+      <p>
+        I create handmade sketches and wooden artworks crafted with detail and care.
+        Every piece is unique and can be customized according to your ideas.
+      </p>
+    </div>
+  </section>
+
+  <!-- CUSTOM ORDER -->
+  <section>
+    <h2>Custom Orders</h2>
+    <div class="custom">
+      <p>
+        Want a custom sketch or wood art made specially for you?
+        Share your idea and I’ll bring it to life.
+      </p>
+      <a href="https://wa.me/91XXXXXXXXXX" target="_blank">Contact on WhatsApp</a>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="about">
+      <p>Email: yourname@email.com</p>
+      <p>Instagram: @yourhandle</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Handmade Art Gallery. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
